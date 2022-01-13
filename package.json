@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "heroku-prebuild": "cd Front-End/delta-exchange-app && npm install && npm run build && cd .. && cd.. && cd Back-End && npm install",
     "start": "cd Back-End && npm start"
