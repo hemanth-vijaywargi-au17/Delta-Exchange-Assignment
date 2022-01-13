@@ -77,17 +77,12 @@ function Filter() {
           Add Member
         </button>
       </div>
-      {name ? (
-          <div>
-            (While adding a member please make sure the company name is one of
-            the name from company filter or else it will not appear in the table as table is filtered.)
-          </div>
-        ) : (
-          <div>
-            (You can only add members if signed in, so that we can save the data
-            into your account.)
-          </div>
-        )}
+      {name ? null : (
+        <div>
+          (You can only add members if signed in, so that we can save the data
+          into your account.)
+        </div>
+      )}
 
       {showModal ? (
         <Modal

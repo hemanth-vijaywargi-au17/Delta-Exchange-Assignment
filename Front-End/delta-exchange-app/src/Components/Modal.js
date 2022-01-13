@@ -4,8 +4,8 @@ import { addMember } from "../Slices/userSlice";
 
 function Modal({ close }) {
   const [name, setName] = useState("");
-  const [company, setCompany] = useState("");
-  const [status, setStatus] = useState("");
+  const [company, setCompany] = useState("DC United");
+  const [status, setStatus] = useState("Active");
   const [notes, setNotes] = useState("");
   const dispatch = useDispatch();
 
@@ -63,27 +63,32 @@ function Modal({ close }) {
               <label htmlFor="" className="form-input-label">
                 Company
               </label>
-              <input
-                type="text"
-                className="form-input"
+              <select
                 value={company}
                 onChange={(e) => {
                   setCompany(e.target.value);
                 }}
-              />
+                className="form-input"
+              >
+                <option value="DC United">DC United</option>
+                <option value="Manchester United">Manchester United</option>
+                <option value="LA Galaxy">LA Galaxy</option>
+              </select>
             </div>
             <div className="form-input-group">
               <label htmlFor="" className="form-input-label">
                 Status
               </label>
-              <input
-                type="text"
-                className="form-input"
+              <select
                 value={status}
                 onChange={(e) => {
                   setStatus(e.target.value);
                 }}
-              />
+                className="form-input"
+              >
+                <option value="Active">Active</option>
+                <option value="Closed">Closed</option>
+              </select>
             </div>
             <div className="form-input-group">
               <label htmlFor="" className="form-input-label">
