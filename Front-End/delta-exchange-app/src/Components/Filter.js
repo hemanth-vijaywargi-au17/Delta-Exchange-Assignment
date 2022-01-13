@@ -76,7 +76,12 @@ function Filter() {
         >
           Add Member
         </button>
-        {name ? null : (
+        {name ? (
+          <div>
+            (While adding a member please make sure the company name is one of
+            the name from company filter)
+          </div>
+        ) : (
           <div>
             (You can only add members if signed in, so that we can save the data
             into your account.)
