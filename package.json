@@ -1,0 +1,21 @@
+{
+  "name": "Delta-Exchange-Assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "heroku-prebuild": "cd Front-End/delta-exchange-app && npm install && npm run build && cd .. && cd.. && cd Back-End && npm install",
+    "start": "cd Back-End && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemanth-vijaywargi-au17/Delta-Exchange-Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hemanth-vijaywargi-au17/Delta-Exchange-Assignment/issues"
+  },
+  "homepage": "https://github.com/hemanth-vijaywargi-au17/Delta-Exchange-Assignment#readme"
+}
