@@ -76,10 +76,11 @@ function Filter() {
         >
           Add Member
         </button>
-        {name ? (
+      </div>
+      {name ? (
           <div>
             (While adding a member please make sure the company name is one of
-            the name from company filter)
+            the name from company filter or else it will not appear in the table as table is filtered.)
           </div>
         ) : (
           <div>
@@ -87,7 +88,6 @@ function Filter() {
             into your account.)
           </div>
         )}
-      </div>
 
       {showModal ? (
         <Modal
