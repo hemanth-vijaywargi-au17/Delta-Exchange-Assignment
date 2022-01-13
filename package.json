@@ -7,7 +7,7 @@
     "node": "16.x"
   },
   "scripts": {
-    "heroku-prebuild": "cd Front-End/delta-exchange-app && npm install && npm run build && cd .. && cd.. && cd Back-End && npm install",
+    "heroku-prebuild": "cd Front-End/delta-exchange-app && npm install && npm run build && cd .. && cd .. && cd Back-End && npm install",
     "start": "cd Back-End && npm start"
   },
   "repository": {
